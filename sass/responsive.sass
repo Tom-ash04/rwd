@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+*
+	box-sizing: border-box
+	margin: 0
+	// border: 1px solid black
+	
+header 
+	background-color: #313332
+
+.container 
+	max-width: 1200px
+	margin: 0 auto
+
+section .container 
+	text-align: center	
+	
+header
+	nav
+		ul 
+			margin: 0
+			padding: 0
+			list-style-type: none
+			float: right
+			li 
+				&:hover
+					background-color: #545956
+					a
+						color: #00C7E8
+				display: inline-block
+				a
+					line-height: 50px
+					padding: 0 20px
+					display: block
+					color: #fff
+					text-decoration: none
+					text-transform: uppercase
+					font-family: 'Open Sans', sans-serif
+		img
+			padding: 10px 0
+.clearfix:before,
+.clearfix:after 
+	content: ""
+	display: table
+	clear: both	
+
+.hero 
+	width: 100%
+	height: 100vh
+	background: url("https://static.pexels.com/photos/129208/pexels-photo-129208.jpeg") 0/cover
+
+.slogan 
+	float: right
+	max-width: 800px
+	color: #fff
+	text-transform: uppercase
+	background-color: rgba(127, 140, 141, 0.3)
+	font-family: 'Open Sans', sans-serif
+	padding: 10px 10% 10px 10px
+	margin-top:  200px
+	font-size: 30px
+
+.row:before,
+.row:after 
+	content: ""
+	display: table
+	clear: both
+	
+[class*="col-"] 
+	float: left
+	min-height: 1px
+	margin: 0
+	padding: 0
+
+.col-1 
+	width: 8.33%
+.col-2
+	width: 16.66%
+.col-3
+	width: 25%
+.col-4
+	width: 33.33%
+.col-5
+	width: 41.66%
+.col-6
+	width: 50%
+.col-7
+	width: 58.33%
+.col-8
+	width: 66.66%
+.col-9
+	width: 75%
+.col-10
+	width: 83.33%
+.col-11
+	width: 91.66%
+.col-12
+	width: 100%
+
+.col-offset-0
+	margin-left: 0
+.col-offset-1
+	margin-left: 8.33%
+.col-offset-2
+	margin-left: 16.66%
+.col-offset-3
+	margin-left: 25%
+.col-offset-4
+	margin-left: 33.33%
+.col-offset-5
+	margin-left: 41.66%
+.col-offset-6
+	margin-left: 50%
+.col-offset-7
+	margin-left: 58.33%
+.col-offset-8
+	margin-left: 66.66%
+.col-offset-9
+	margin-left: 75%
+.col-offset-10
+	margin-left: 83.33%
+.col-offset-11
+	margin-left: 91.66%
+
+i.fa 
+	width: 60px
+	height: 60px
+	background-color: #313332
+	color: white
+	border-radius: 5px
+	font-size: 40px
+	line-height: 60px
+
+section>.container 
+	margin: 50px auto
+	text-align: center
+
+h3 
+	font-family: 'Open Sans', sans-serif
+	text-transform: uppercase
+
+h2 
+	font-family: 'Open Sans', sans-serif
+	text-transform: uppercase
+	
+.icons
+	p 
+		padding: 0 50px
+
+section.gallery 
+	width: 100%
+
+section.gallery
+	[class*="col-"] 
+		position: relative
+		&:hover
+			.layer
+				height: 100%
+				bottom: 0
+
+div.row
+	img 
+		width: 100%
+		height: 200px
+		display: block
+
+.layer
+	position: absolute
+	left: 0
+	bottom: 0
+	right: 0
+	width: 90%
+	height: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: rgba(0, 0, 0, 0.5)
+	overflow: hidden
+	transition: 0.5s ease
+	margin-left: 5%
+	i 
+		width: 60px
+		height: 60px
+		background-color: white
+		color: #313332
+		border-radius: 5px
+		font-size: 40px
+		line-height: 60px
+
+.spacer 
+	width: 30%
+
+
+
+.team
+	.col-3
+		overflow: hidden
+		padding: 10px
+		position: relative
+		display: block
+		float: left
+		p
+			font-weight: bold
+			font-size: 20px
+
+.team
+	.row
+		.col-3
+			img 
+				border-radius: 50%
+				display: block
+				height: 280px
+				width: 280px
+
+.team
+	.shadow 
+		height: 280px
+		width: 280px
+		position: absolute
+		border-radius: 50%
+		background-color: rgba(0, 0, 0, 0.5)
+		text-align: center
+		line-height: 280px
+		color: white
+		opacity: 0
+		transition: 0.5s ease
+
+.shadow
+	&:hover 
+		opacity: 1
+
+.icon
+	&:hover
+		[class*="fa-"] 
+			background-color: #00C7E8
+
+.icon
+	&:hover 
+		h3 
+			color: #00C7E8
+
+.container.title
+	.row 
+		padding: 50px 0 0 50px
+		background: url("https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg?w=940&h=650&auto=compress&cs=tinysrgb") 0/cover
+		text-align: left
+	p 
+		display: inline-block
+		color: white
+		font-size: 20px
+
+.text1 
+	width: 400px
+	margin: 30px 30px 0 40px
+
+.text2
+	width: 230px
+
+.title
+	.row
+		h2
+		margin: 50px 0 0 40px
+		color: white
+		font-size: 40px
+
+.container.title
+	max-width: none
+	min-width: 1200px
+	width: 100%
+
+.container.title
+	.row
+		max-width: none
+		min-width: 1200px
+		width: 100%
+		.col-4
+			position: relative
+			overflow: hidden
+			img
+				height: 400px
+				position: relative
+				top: 30px
+				border-radius: 20px
+
+.numbers
+	h1 
+		font-family: 'Roboto', sans-serif
+		font-weight: bold
+		font-size: 70px
+	h3
+		font-weight: bold
+		color: #00C7E8
+
+section.ending
+	background-color: #313332
+	padding: 1px
+
+.footer
+	.row
+		min-width: none
+		margin: 0 auto
+		.col-4
+			text-align: left
+			color: rgba(255, 255, 255, 0.9)
+			font-family: 'Roboto', sans-serif
+			padding-right: 40px
+
+.ending h2, .ruler
+	display: inline-block
+
+.ending
+	h2
+		font-family: 'Roboto', sans-serif
+		color: white
+
+.ruler
+	width: 90px
+	border: 1px solid rgba(255, 255, 255, 0.9)
+	margin: 0 0 8px 15px
+
+.ending
+	i
+		text-align: center
+		height: 30px
+		width: 30px
+		font-size: 15px
+		line-height: 30px
+		border-radius: 0
+		margin: 10px 5px 0 0
+		background-color: #00C7E8
+		cursor: pointer
+
+footer
+	background-color: #252726
+	color: white
+	text-align: center
+	font-family: 'Roboto', sans-serif
+	padding: 20px 0
+	min-width: 1200px
+	width: 100%
+
+.bold
+	font-weight: bold
+
+.inner-footer
+	margin-top: 20px
+
+.inner-footer .row
+	padding-bottom: 10px
+
+@media (max-width: 767px)
+	.col-s-1
+		width: 8.33%
+	.col-s-2
+		width: 16.66%
+	.col-s-3
+		width: 25%
+	.col-s-4
+		width: 33.33%
+	.col-s-5
+		width: 41.66%
+	.col-s-6
+		width: 50%
+	.col-s-7
+		width: 58.33%
+	.col-s-8
+		width: 66.66%
+	.col-s-9
+		width: 75%
+	.col-s-10
+		width: 83.33%
+	.col-s-11
+		width: 91.66%
+	.col-s-12
+		width: 100%
+
+	header
+		nav 
+			text-align: center
+			ul
+				float: none
+				li 
+					display: block
+
+	.slogan
+		font-size: 20px
+
+	.icons
+		width: 100%
+
+	.icons
+		.col-s-10
+			width: 90%
+			margin: 0 5% 0 5%
+			margin-bottom: 20px
+			p
+				padding: 5% 10%
+
+	section.gallery
+		.col-s-12
+			float: left
+		img
+			width: 100%
+			height: auto
+			padding: 0 5%
+
+	.layer
+		i
+			width: 40px
+			height: 40px
+			font-size: 30px
+			line-height: 40px
+
+	.layer
+		height: 25%
+		background-color: rgba(0, 0, 0, 0)
+
+	section.gallery
+		[class*="col-"]
+			&:hover
+				.layer
+					height: 25%
+
+	.spacer
+		width: 70%
+
+	.team
+		.row
+			.col-s-12
+				img
+					margin: 0 auto
+				p
+					margin: 20px 0
+
+	.team
+		.shadow
+			width: 100%
+			height: auto
+			opacity: 1
+			background-color: rgba(0, 0, 0, 0)
+
+	.container.title
+		max-width: none
+		width: auto
+		min-width: 0px
+
+	.container.title
+		.row
+			max-width: none
+			min-width: 0px
+			width: auto
+			padding: 5%
+			.col-4
+				display: block
+				position: static
+				img
+					display: block
+					position: relative
+					top: 0px
+					width: 100%
+
+	.text1
+		width: auto
+		margin: 30px 0 30px 0
+
+	.text2
+		width: auto
+
+	.title
+		.row
+			h2
+				margin: 50px 0 0 0
+				color: white
+				font-size: 40px
+
+	.numbers
+		.col-s-12
+			margin-bottom: 30px
+
+	.footer
+		.row
+			width: 100%
+
+	.footer
+		.col-s-12
+			margin: 5%
+
+	footer
+		min-width: 0px
+		width: 100%
+
+	.icon
+		[class*="fa-"]
+			background-color: #00C7E8
+
+	.icon
+		h3
+			color: #00C7E8
+
+@media (min-width: 768px) // For desktop
+	.col-m-1
+		width: 8.33%
+	.col-m-2
+		width: 16.66%
+	.col-m-3
+		width: 25%
+	.col-m-4
+		width: 33.33%
+	.col-m-5
+		width: 41.66%
+	.col-m-6
+		width: 50%
+	.col-m-7
+		width: 58.33%
+	.col-m-8
+		width: 66.66%
+	.col-m-9
+		width: 75%
+	.col-m-10
+		width: 83.33%
+	.col-m-11
+		width: 91.66%
+	.col-m-12
+		width: 100%
+
+	section.hero
+		width: 100%
+		max-width: none
+
+	section.gallery
+		.container
+			max-width: none
+			margin: 0 auto
+			width: auto
+
+	section.gallery
+		margin: 0 auto
+		max-width: none
+		width: auto
+
+	.layer
+		margin: 0 auto
+		width: 100%
